@@ -82,7 +82,7 @@ nav .social a:hover {
   color: var(--secondary-color);
 }
 
-#hero {
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -91,43 +91,43 @@ nav .social a:hover {
   flex-direction: row-reverse;
 }
 
-#hero .hero-text {
+.hero .hero-text {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   max-width: 540px;
 }
 
-#hero .hero-text .judul {
+.hero .hero-text .judul {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-#hero .hero-text .judul h1 {
+.hero .hero-text .judul h1 {
   color: var(--primary-color);
   font-size: 3rem;
   font-weight: 600;
 }
 
-#hero .hero-text .judul h3 {
+.hero .hero-text .judul h3 {
   font-size: 1.5rem;
   font-weight: 300;
 }
 
-#hero .hero-text h4 {
+.hero .hero-text h4 {
   font-size: 1rem;
   font-weight: 100;
 }
 
-#hero .hero-text p {
+.hero .hero-text p {
   font-size: 0.9rem;
   font-weight: 300;
   line-height: 1.4rem;
   text-align: justify;
 }
 
-#hero img {
+.hero img {
   width: 300px;
   height: 360px;
   object-fit: cover;
@@ -135,13 +135,13 @@ nav .social a:hover {
   border: var(--primary-color) 3px solid;
 }
 
-#hero .click {
+.hero .click {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
 
-#hero .click .btn {
+.hero .click .btn {
   padding: 10px 20px;
   border-radius: 1px 10px;
   border: var(--secondary-color) 2px solid;
@@ -153,19 +153,19 @@ nav .social a:hover {
   font-weight: 600;
 }
 
-#hero .click .btn:hover {
+.hero .click .btn:hover {
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
-#hero .click .social-hero {
+.hero .click .social-hero {
   display: flex;
   align-items: center;
   gap: 1rem;
   padding-left: 14px;
 }
 
-#hero .click .social-hero a {
+.hero .click .social-hero a {
   color: var(--secondary-color);
   font-size: 1rem;
   transition: 0.2s ease;
@@ -175,12 +175,12 @@ nav .social a:hover {
   transition: 0.2s ease;
 }
 
-#hero .click .social-hero a:hover {
+.hero .click .social-hero a:hover {
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
 
-.pendidikan {
+#about {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -189,13 +189,13 @@ nav .social a:hover {
   padding: 60px 100px;
 }
 
-.pendidikan h2 {
+#about h2 {
   color: var(--primary-color);
   font-size: 2rem;
   font-weight: 600;
 }
 
-.pendidikan table {
+#about table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.9rem;
@@ -204,19 +204,19 @@ nav .social a:hover {
   text-align: justify;
 }
 
-.pendidikan table th,
-.pendidikan table td {
+#about table th,
+#about table td {
   border: 1px solid var(--secondary-color);
   padding: 10px 15px;
 }
 
-.pendidikan table th {
+#about table th {
   background-color: var(--primary-color);
   color: var(--text-color);
   font-weight: 600;
 }
 
-.formulir {
+#contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -225,13 +225,13 @@ nav .social a:hover {
   padding: 60px 100px;
 }
 
-.formulir h2 {
+#contact h2 {
   color: var(--primary-color);
   font-size: 2rem;
   font-weight: 600;
 }
 
-.formulir form {
+#contact form {
   border: var(--primary-color) 2px solid;
   border-radius: 1px 10px;
   padding: 20px 40px;
@@ -248,19 +248,19 @@ nav .social a:hover {
   gap: 1.5rem;
 }
 
-.formulir form .form-group {
+#contact form .form-group {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
 }
 
-.formulir form .form-group label {
+#contact form .form-group label {
   color: var(--primary-color);
   font-size: 0.9rem;
   font-weight: 600;
 }
 
-.formulir form .form-group input {
+#contact form .form-group input {
   padding: 10px 20px;
   border-radius: 1px 10px;
   border: var(--secondary-color) 2px solid;
@@ -271,7 +271,7 @@ nav .social a:hover {
   font-weight: 600;
 }
 
-.formulir form .form-group textarea {
+#contact form .form-group textarea {
   padding: 10px 20px;
   border-radius: 1px 10px;
   border: var(--secondary-color) 2px solid;
@@ -282,7 +282,7 @@ nav .social a:hover {
   font-weight: 600;
 }
 
-.formulir form button {
+#contact form button {
   padding: 10px 20px;
   border-radius: 1px 10px;
   border: var(--secondary-color) 2px solid;
@@ -295,7 +295,7 @@ nav .social a:hover {
   cursor: pointer;
 }
 
-.formulir form button:hover {
+#contact form button:hover {
   background-color: var(--secondary-color);
   color: var(--text-color);
 }
@@ -322,27 +322,27 @@ footer {
     gap: 1.5rem;
   }
 
-  #hero {
+  .hero {
     padding: 40px 20px;
     flex-direction: column-reverse;
     text-align: center;
   }
 
-  #hero img {
+  .hero img {
     width: 80%;
     height: auto;
   }
 
-  #hero .hero-text {
+  .hero .hero-text {
     max-width: 100%;
   }
 
-  .pendidikan,
-  .formulir {
+  #about,
+  #contact {
     padding: 40px 20px;
   }
 
-  .formulir form {
+  #contact form {
     padding: 20px;
   }
 }
@@ -357,26 +357,26 @@ footer {
     gap: 1rem;
   }
 
-  #hero {
+  .hero {
     padding: 20px;
     gap: 1.5rem;
   }
 
-  #hero img {
+  .hero img {
     width: 100%;
   }
 
-  .pendidikan table,
-  .formulir form {
+  #about table,
+  #contact form {
     width: 100%;
   }
 
-  .pendidikan h2,
-  .formulir h2 {
+  #about h2,
+  #contact h2 {
     font-size: 1.5rem;
   }
 
-  .formulir form {
+  #contact form {
     padding: 15px;
   }
 
